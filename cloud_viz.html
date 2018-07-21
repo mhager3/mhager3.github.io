@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Latitude</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Latitude</a>
+            </div>
+        
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="temp_viz.html">Temperature</a></li>
+                    <li><a class="dropdown-item" href="humid_viz.html">Humidity</a></li>
+                    <li><a class="dropdown-item" href="cloud_viz.html">Cloudiness</a></li>
+                    <li><a class="dropdown-item" href="wind_viz.html">Windpeed</a></li>
+                </ul>
+                </li>
+                <li><a href="comparison.html">Comparisons</a></li>
+                <li><a href="data.html">Data</a></li>
+            </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- Navbar end -->
+    
+
+<div class="container">
+    <div class="row row-grid">
+        <div class="col-lg-7">
+            <div class="box box-left">
+                <section id="intro">
+                  <h1>Cloudiness</h1>
+                  <hr>
+                  <figure>
+                  <a target="_blank" href="data/Cloud_vs_Lat.png">
+                      <img id="viz-main" src="data/Cloud_vs_Lat.png" alt="Temp and Lat" class="img-responsive" style="width:100%" alt="Image">
+                  </a>
+                  </figure>
+                  <hr>
+                  <p>
+                      As we inspect the data points for Cloudiness, Humidity, and Windspeed,
+                      there is no clear indication of a relationship to Temperature.
+                  </p>
+                  
+                </section>
+            </div>
+        </div>      
+        
+      <div class="container-fluid bg-3 text-center">    
+        <h3>Visualizations</h3><br>
+        <div class="row">
+            <div class="col-sm-2">
+                <p>Temperature</p>
+                <a href="temp_viz.html">
+                  <img src="data/Temp_vs_Lat_PLOT.png" class="img-responsive" style="width:100%" alt="Image">
+                </a>
+              </div>
+              <div class="col-sm-2"> 
+                <p>Cloudiness</p>
+                <a href="cloud_viz.html">
+                  <img src="data/Cloud_vs_Lat.png" class="img-responsive" style="width:100%" alt="Image">
+                </a>
+              </div>
+              <div class="col-sm-2"> 
+                <p>Humidity</p>
+                <a href="humid_viz.html">
+                  <img src="data/Humid_vs_Lat.png" class="img-responsive" style="width:100%" alt="Image">
+                </a>
+              </div>
+              <div class="col-sm-2"> 
+                <p>Windspeed</p>
+                  <a href="wind_viz.html">
+                    <img src="data/Windspeed.png" class="img-responsive" style="width:100%" alt="Image">
+                  </a>
+              </div>
+        </div>
+      </div><br>
+      
+      <br><br>
+      
+      <footer class="container-fluid text-center">
+        <p>Round Away</p>
+      </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
